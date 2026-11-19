@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Platinum Road — GTA 6 Trophy Guide &amp; Tracker</title>
+<meta name="description" content="A free, offline trophy guide and progress tracker for Grand Theft Auto VI: all 55 trophies, a platinum roadmap, missable warnings and a guide to each trophy, with sources cited.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-mark" aria-hidden="true">VI</span>
+    <div>
+      <h1>Platinum Road</h1>
+      <p class="subtitle">Grand Theft Auto VI &middot; Trophy Guide &amp; Tracker</p>
+    </div>
+  </div>
+  <div class="header-progress" id="header-progress" aria-live="polite">
+    <div class="big-count"><span id="earned-count">0</span><span class="of">/ 55</span></div>
+    <div class="progress-wrap">
+      <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+      <p class="progress-label" id="progress-label">0% to the Platinum</p>
+    </div>
+  </div>
+</header>
+
+<nav class="tabs" aria-label="Guide sections">
+  <button data-view="checklist" class="tab active" type="button">Checklist</button>
+  <button data-view="roadmap" class="tab" type="button">Roadmap</button>
+  <button data-view="missables" class="tab" type="button">Missables</button>
+  <button data-view="planner" class="tab" type="button">Next up</button>
+  <button data-view="about" class="tab" type="button">About &amp; sources</button>
+</nav>
+
+<main id="view" class="view"></main>
+
+<section class="detail-backdrop" id="detail-backdrop" hidden>
+  <article class="detail-pane" id="detail-pane" role="dialog" aria-modal="true" aria-labelledby="detail-title"></article>
+</section>
+
+<footer class="foot">
+  <p>Platinum Road is an independent, fan-made guide. Grand Theft Auto and GTA are trademarks of Rockstar Games. This guide works fully offline — your progress is saved only in this browser.</p>
+  <p class="foot-links">
+    <button type="button" id="export-btn">Export progress</button>
+    <label class="import-label">Import progress <input type="file" id="import-file" accept="application/json,.json" hidden></label>
+    <button type="button" id="reset-btn">Reset progress</button>
+  </p>
+</footer>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
